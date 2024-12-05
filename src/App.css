@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  padding: 20px;
+}
+
+.players-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.player-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Styling for the form container */
+.form-container {
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the submit button */
+button[type='submit'] {
+  display: block; /* Ensure it’s a block element */
+  margin: 20px auto 0; /* Center the button horizontally */
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #45a049;
+}
+
+/* Prevent form overflow issues */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+
